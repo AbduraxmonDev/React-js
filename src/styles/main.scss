@@ -1,7 +1,6 @@
-@import './variables';
-@import './normalize';
+@import "./variables";
+@import "./normalize";
+@import "./settings";
 
-
-@import './components/header';
-@import './components/page';
-
+@import "./components/page";
+@import './components/addModal';
