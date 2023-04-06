@@ -1,5 +1,5 @@
 import React from "react";
-import Page from './components/Page'
+import Page from "./components/Page";
 function App() {
   // const [todos, setTodos] = useState([]);
 
@@ -11,7 +11,7 @@ function App() {
   //     };
   //     setTodos([...todos, newTodo]);
   //   }
-  // }; 
+  // };
 
   return (
     <div className="wrapper">
@@ -26,8 +26,7 @@ function App() {
           ))}
         </ul>
       )} */}
-
-      <Page />  
+      <Page />
     </div>
   );
 }

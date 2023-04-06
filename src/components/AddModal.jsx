@@ -1,25 +1,23 @@
 import React from "react";
 
-function AddModal({ open, onClose, handleAddTodo, titleref, descRef }) {
-  
-  
-  
+export default function AddModal({
+  open,
+  onClose,
+  handleAddTodo,
+  titleref,
+  descRef,
+}) {
   const addToDo = () => {
     onClose();
     descRef.current.value = "";
     titleref.current.value = "";
   };
 
-
-  
   if (open) {
     document.body.style.overflow = "hidden";
   } else {
     document.body.style.overflow = "auto";
   }
-
-
-
 
   return (
     <div className={`modal ${open ? "show" : ""}`} onClick={addToDo}>
@@ -69,5 +67,3 @@ function AddModal({ open, onClose, handleAddTodo, titleref, descRef }) {
     </div>
   );
 }
-
-export default AddModal;
